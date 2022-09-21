@@ -89,10 +89,13 @@ body{
     height: 80px;
     background-color:#5A1E82;
 }
-
+a{
+    padding: 10px;
+}
 nav{
-    display:flex;
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
 }
 
 @media (max-width:700px){
