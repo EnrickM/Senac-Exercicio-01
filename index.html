@@ -20,22 +20,32 @@
             <p class="nome">Enrick Magalhães</p>
         
             <nav>
-                <a>Início</a>
-                <a>Sobre</a>
-                <a>Trabalhos</a>
-                <a>Contato</a>
+                <a id= "scroll"onclick="sobre()">Sobre</a>
+                <a id= "scroll"onclick="trabalhos()">Trabalhos</a>
+                <a id= "scroll"onclick="contato()">Contato</a>
+
+                <script>                 
+                    function sobre() {
+                      scrollTo(0, 0)
+                    }
+                    function trabalhos() {
+                      scrollTo(0, 260)
+                    }
+                    function contato() {
+                      scrollTo(0, 1250)
+                    }
+                    </script>
+                
             </nav>
             
         </div>
 
     </header>
-
-    <br>
-
+    <div class="vacuo"></div>  
     <div class="centro">
         <h1>Sobre</h1>
         <p>
-            Nascido e criado no Rio, sempre teve afinidade e um desejo de trabalhar com jogos e a economia criativa. Graduado em Design na UFRJ em 2018, estagiou em Direção de Arte publicitária em 2017, cursou o Estúdio Escola de Animação em 2018 e tem 3 anos de experiência em estúdio de desenvolvimento de jogos como artista e animador na produtora cultural Rebuliço de 2019 a 2022, criando materiais promocionais, identidade visual, arte conceitual, design de personagens, arte de personagens 2D, rig 2D, animação 2D, modelagem 3D, Rig 3D e Animação 3D, utilizando principalmente os softwares Illustrator, Photoshop, Spine, Blender e Unity.
+            Nascido e criado no Rio, sempre teve afinidade e um desejo de trabalhar com jogos e a economia criativa. Graduado em Design na UFRJ em 2018, estagiou em Direção de Arte publicitária em 2017, cursou o Estúdio Escola de Animação em 2018 e tem mais de 3 anos de experiência em estúdio de desenvolvimento de jogos como artista e animador na produtora cultural Rebuliço de 2019 a 2022, criando materiais promocionais, identidade visual, arte conceitual, design de personagens, arte de personagens 2D, rig 2D, animação 2D, modelagem 3D, Rig 3D e Animação 3D, utilizando principalmente os softwares Illustrator, Photoshop, Spine, Blender e Unity.
         </p>
     </div>
 
@@ -55,20 +65,31 @@
 
     <div class="centro">
         <h1>Contato</h1>
-        <p class="pai">
-            email: enrickmagalhaes@gmail.com
-            <br>
-            facebook: /enrick.magalhaes
-            <br>
-            intagram: @enrickmagalhaes
-            <br>
-            linkedin: /enrickmagalhaes
-            <br>
-            telefone: (21) 97357- 7254
-        </p>
-        </div>
+            <form name="formulario">
+                <label for="nome">Nome</label>
+                <input type="text" id="nomeid" placeholder="Bilbo Bolseiro" required="required" name="nome" />
+                
+                <br>
 
-    <br>
+                <label for="fone">Telefone</label>
+                <input type="tel" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone" />
+
+                <br>
+
+                <label for="email">Email</label>            
+                <input type="email" id="emailid" placeholder="bilbobolseiro@tolkienmail.com" name="email" />
+              
+                <br>
+
+                <label for="email">Mensagem</label>            
+                <textarea placeholder="Deixe sua mensagem"></textarea>
+                
+                <br>
+                <br>
+
+                <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+              </form>
+        </div>
 
 </body>
 </html>

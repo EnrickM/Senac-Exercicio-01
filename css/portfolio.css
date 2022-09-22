@@ -9,20 +9,6 @@ body{
     background-size: cover;
 }
 
-.topo{
-
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-    background-color:#1B1E1F;
-    display: flex;
-    align-items:center;
-    justify-content:center;
-    margin: auto;
-    width: 100%;
-    background-image: url(https://mir-s3-cdn-cf.behance.net/42a9fd5cb60b06b387176d919b2d5cab/074e274e-9607-4f19-a0b6-76f636ff8de3_rwc_1372x1176x3016x421x5760.png?h=96138d97bb185cda9ffe1c4687de2af9);
-}
-
 .centro {
     margin: auto;
     width: 60%;
@@ -38,7 +24,6 @@ body{
     flex-flow: row wrap;
     width: 100%;
     border: 0px solid black;
-    
 }
 
 .filho{
@@ -92,14 +77,17 @@ body{
 }
 
 .nome{
+    margin-left: -150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
     font-family: Verdana;
     font-size: 20px;
     font-family: sans-serif;
     font-weight: bold;
     color: white;
-    margin: 20px;
-    text-align: center;
-    padding-right:20%;
+    text-align: left;
+    padding-right:10%;
     padding-top: 5px;
     padding-bottom: 10px;
     width: auto;
@@ -107,10 +95,87 @@ body{
 }
 
 nav{
-    margin-top:-15px;
+    margin-top:-20px;
     display: flex;
     flex-direction: row;
     padding: 10px;
+}
+
+a{
+    font-family: Verdana;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    margin: 0px;
+    text-align: center;
+    border-radius: 25px;
+    background:#1B1E1F;
+    padding: 16px;
+    width: auto;
+    height: 50px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+a:hover {
+    font-family: Verdana;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    margin: 0px;
+    text-align: center;
+    border-radius: 25px;
+    background: white;
+    padding : 16px;
+    width: auto;
+    height: 50px;
+   }
+
+a:active {
+    font-family: Verdana;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    margin: 0px;
+    text-align: center;
+    border-radius: 25px;
+    background: #DC595A;
+    padding : 16px;
+    width: auto;
+    height: 50px;
+   }
+
+.topo{
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+    background-color:#1B1E1F;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin: auto;
+    background-image: url(https://mir-s3-cdn-cf.behance.net/42a9fd5cb60b06b387176d919b2d5cab/074e274e-9607-4f19-a0b6-76f636ff8de3_rwc_1372x1176x3016x421x5760.png?h=96138d97bb185cda9ffe1c4687de2af9);
+}
+
+.vacuo{
+    margin: auto;
+    width: 60%;
+    border-radius: 25px;
+    padding: 10px;
+    width: 100%;
+    height: 200px;
+}
+
+.barra{
+    margin-top: 100px;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color:#1B1E1F;
 }
 
 .menu{
@@ -126,17 +191,77 @@ nav{
     width: 60%;
 }
 
-.barra{
+form{
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana;
+    font-size: 16px;
+    margin: 20px;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color:white;
+    text-align:justify;
+    }
 
-    width: 100%;
-    height: 80px;
-    background-color:#1B1E1F;
-}
-
-
-a{
+textarea{
     padding: 10px;
+    border-radius: 25px;
+    background: white;
 }
+
+input{
+    padding: 10px;
+    border-radius: 25px;
+    background: white;
+}
+
+.enviar{
+    font-family: Verdana;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    margin: 0px;
+    text-align: center;
+    align-self: center;
+    border-radius: 25px;
+    background:#1B1E1F;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 50px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.enviar:hover {
+    font-family: Verdana;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    margin: 0px;
+    text-align: center;
+    border-radius: 25px;
+    background: white;
+    width: auto;
+    height: 50px;
+   }
+
+.enviar:active {
+    font-family: Verdana;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+    margin: 0px;
+    text-align: center;
+    border-radius: 25px;
+    background: #DC595A;
+    width: auto;
+    height: 50px;
+   }
+
 
 h1 {
     font-family: Verdana;
